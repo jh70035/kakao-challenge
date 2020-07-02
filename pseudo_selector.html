@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            border:5px solid yellow;
+            
+        
+        }
+
+        input[type="password"]{
+            background-color: blue;
+        }
+        input[type="submit"]{
+            background-color: green;
+        }
+
+        input[required="required"]{
+            background-color: red;
+        }
+
+        input[required="required"]{
+            background-color: pink;
+        }
+
+        .newbox{
+            height: 50px;
+            width: 50px;
+            background-color: green;
+            border: black solid 2px;
+        }
+
+        .newbox:first-child{
+            background-color: pink;
+        }
+        .newbox:nth-child(2n+1){
+            background-color: yellow;
+        }
+
+        .container{
+            height: 500px;
+            display: flex;
+            justify-content: space-between;
+            /* align-items:center; */
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+        }
+
+        .myspan{
+            font-size: 10;
+            background-color: red;
+        }
+
+        .myspan:focus{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box">
+        <input type="password" required="required">
+        <input type="submit">
+    </div>
+    <div class="container">
+        <div class="newbox">1</div>
+        <div class="newbox">2</div>
+        <div class="newbox">3</div>
+        <div class="newbox">4</div>
+        <div class="newbox">5</div>
+        <div class="newbox">6</div>
+        <div class="newbox">7</div>
+        <div class="newbox">8</div>
+        <div class="newbox">9</div>
+        <div class="newbox">10</div>
+        <div class="newbox">11</div>
+        <div class="newbox">12</div>
+    </div>
+    <textarea class="myspan">lalalalalal</span>
+</body>
+</html>
