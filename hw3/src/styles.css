@@ -8,7 +8,8 @@ html {
   height: 100%;
 }
 body {
-  height: 400%;
+  /* height: 400%; */
+  height: 1500px;
 }
 
 .bigbox {
@@ -40,7 +41,8 @@ body {
 }
 .box1 {
   width: 70%;
-  height: 900px;
+  /* height: 900px; */
+  height: 100%;
   background-color: blue;
   padding: 50px;
 }
