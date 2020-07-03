@@ -1,0 +1,49 @@
+.button {
+  /* border: 1px solid grey; */
+  display: flex;
+  border-radius: 20px;
+  width: 150px;
+  height: 30px;
+  background-color: grey;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes button-effect {
+  from {
+    box-shadow: none;
+    background-color: grey;
+  }
+  to {
+    box-shadow: 4px 4px 10px #d9d9d9;
+    background-color: #d9d9d9;
+  }
+}
+
+@keyframes fig-effect {
+  from {
+    border: none;
+    transform: none;
+  }
+  to {
+    border: 3px solid black;
+    transform: scale(0.7, 0.7) rotate(120deg);
+  }
+}
+.button span {
+  color: white;
+  font-size: 15px;
+}
+
+#nico {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.button:active {
+  animation: 5s button-effect ease-in-out;
+}
+
+.button:active + #nico {
+  animation: 5s fig-effect ease-in-out;
+}

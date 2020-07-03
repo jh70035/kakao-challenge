@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .button {
+        /* border: 1px solid grey; */
+        border-radius: 20px;
+        width: 150px;
+        height: 30px;
+        background-color: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .button {
+        transition: all 5s ease-in-out;
+      }
+
+      .button {
+        color: white;
+        font-size: 15px;
+      }
+      .nico {
+        margin-top: 30px;
+        margin-left: 10px;
+      }
+      .nico {
+        transition: all 5s ease-in-out;
+      }
+
+      .button:active {
+        box-shadow: 4px 4px 10px #d9d9d9;
+        background-color: #d9d9d9;
+      }
+
+      .button:active + .nico {
+        border: 3px solid black;
+        transform: scale(0.7, 0.7) rotate(120deg);
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="src/styles.css" /> -->
+  </head>
+  <body>
+    <span class="button">
+      I am a button
+    </span>
+    <img class="nico" src="src/fig.jpg" />
+  </body>
+</html>
