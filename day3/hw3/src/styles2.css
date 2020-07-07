@@ -1,0 +1,55 @@
+body{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    padding-top: 100px; 
+    /* Height of the header */
+    height: 1500px;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: #ff7879;
+    position: fixed;
+    top:0px;  /*body의padding-top이 100px이여도 덮어/씀*/
+    z-index: 1; 
+    /* z-index가 1보다 작은 element보다 위로. 이게 없으면 yellow boxc가 덮음 */ */
+}
+.box{
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+}
+.blueBox{
+    display: inline-block;
+    background-color: blue;
+    width: 70%;
+    /* height: 1500px; */
+    /* padding-top: 20px; */
+}
+
+.blueBox h1{
+    color: white;
+    margin-top: 50px;
+    margin-left: 50px;
+    /* display: inline-block; */
+}
+
+.yellowbox{
+    background-color: yellow;
+    width: 28%;
+    border: 5px solid grey;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+
+.greenBox{
+    background-color: green;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: -30px;
+    left:-60px;
+    z-index: 2;
+}

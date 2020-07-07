@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Jeong hyun" />
+  <meta name="description" content="Welcome to kakao-cloning" />
+  <!-- <title>Positin</title> -->
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .father {
+      display: flex;
+      height: 100%;
+      /* width: 300px; */
+      background-color: yellow;
+      /* position: static; */
+      /*positon default=static, fixed=> 화면을 따라옴*/
+      /* left: 50px; */
+      justify-content: space-between;
+      /* align-items: flex-start; */
+      flex-direction: row;
+      flex-wrap: wrap-reverse;
+    }
+    .box {
+      border: solid black 5px;
+      height: 200px;
+      width: 200px;
+      /* margin: 10px; */
+      background-color: green;
+      /* position: fixed; */
+    }
+    #tit {
+      background-color: gray;
+    }
+  </style>
+
+  <body>
+    <h1 id="tit">Position</h1>
+    <div class="father">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <!-- <div class="box"></div> -->
+      <!-- <div class="box"></div> -->
+      <!-- <div class="box"></div> -->
+    </div>
+  </body>
+</html>

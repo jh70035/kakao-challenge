@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <style>
+    body,
+    html {
+      padding: 0;
+      margin: 0;
+      /* height: 100%; */
+    }
+    body {
+      /* height: 400%; */
+    }
+    /* .header {
+        background-color: red;
+        width: 100%;
+        height: 100px;
+        position: fixed;
+      } */
+    .bigbox {
+      /* display: flex; */
+      height: 1500px;
+    }
+    .headerbox {
+      background-color: red;
+      height: 10%;
+      width: 100%;
+      position: fixed;
+    }
+    .headerbox_back {
+      /* background-color: red; */
+      /* height: 10%; */
+      height: 84px;
+      width: 100%;
+      /* position: fixed; */
+    }
+
+    .smallbox {
+      background-color: green;
+      width: 15%;
+      height: 5%;
+      top: 7.5%;
+      left: 65%;
+      position: fixed;
+    }
+
+    .subbox {
+      /* top: 20%; */
+      display: flex;
+      position: static;
+      /* top: 400px; */
+    }
+    .box1 {
+      width: 70%;
+      height: 900px;
+      background-color: blue;
+      padding: 50px;
+      /* padding: 50px; */
+      /* border: gray 10px solid; */
+      /* display: inline-block; */
+    }
+    .box2 {
+      width: 30%;
+      background-color: yellow;
+      border: gray 10px solid;
+      height: 980px;
+    }
+
+    .title {
+      font-size: 30px;
+      color: white;
+    }
+  </style>
+  <body>
+    <!-- <div class="header"> -->
+    <div class="bigbox">
+      <!-- <div class="smallbox"></div> -->
+      <!-- <div class="headerbox_back"></div> -->
+
+      <div class="subbox">
+        <div class="box1">
+          <span class="title">This is the day one</span>
+        </div>
+        <div class="box2"></div>
+      </div>
+      <div class="headerbox"></div>
+    </div>
+  </body>
+</html>

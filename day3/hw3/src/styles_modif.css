@@ -1,0 +1,77 @@
+body {
+  font-family: sans-serif;
+}
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  /* height: 400%; */
+  height: 1500px;
+  padding-top: 100px;
+}
+
+/* .bigbox {
+  height: 1500px;
+} */
+.headerbox {
+  background-color: red;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
+/* .headerbox_back {
+  height: 74px;
+  width: 100%;
+} */
+.box{
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+}
+
+
+/* .static_box {
+  display: flex;
+  position: static;
+} */
+.box1 {
+  background-color: blue;
+  width: 70%;
+  /* height: 100%; */
+  /* height: 1000px; */
+  padding-top: 30px;
+  padding-left: 30px;
+  display: inline-block;
+  height: 98.2%;
+}
+.box2 {
+  width: 26%;
+  background-color: yellow;
+  border: gray 2px solid;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.title {
+  font-size: 30px;
+  color: white;
+  /* padding-top:20px; */
+}
+
+.smallbox {
+  background-color: green;
+  width: 100px;
+  height: 50px;
+  top: -20px;
+  left: -50px;
+  /* left: 65%; */
+  position: absolute;
+  z-index: 2;
+}
