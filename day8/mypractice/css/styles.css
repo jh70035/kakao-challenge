@@ -1,0 +1,116 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 50px;
+  background-color: grey;
+  /* margin: 30px; */
+}
+
+.product {
+  width: 300px;
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.product .product__image {
+  max-width: 100%;
+  /*창크기를 늘려도 기본 그림사이즈보다 커지지 않는다. */
+  /* width: 100%; */
+  /* 부모 container가 커지면 기본크기보다 더 커진다. */
+}
+
+.product .product__title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.product .product__subtitle {
+  font-size: 12px;
+  opacity: 0.6;
+  letter-spacing: 0.1px;
+}
+
+.product .product__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.product .product__price {
+  /* background-color: tomato; */
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.product .product__rating i {
+  font-size: 14px;
+  font-weight: 600;
+  color: tomato;
+}
+
+.product .product__rating i:last-child {
+  color: grey;
+}
+
+.user {
+  overflow: hidden;
+  /* 컨테이너보다 내용이 크면 가리고 표현 */
+  background-color: white;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  border-top-width: 100px;
+}
+
+.user .user__bg {
+  height: 150px;
+  width: 100%;
+  background-color: tomato;
+  background-image: url("../src/icon64.png");
+  background-size: cover;
+}
+
+.user .user__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.user .user__avatar {
+  position: absolute;
+  top: -50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: 5px solid white;
+}
+
+.user .user__name {
+  margin-top: 60px;
+}
+
+.user .user__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user__buttons .user__button {
+  text-decoration: none;
+  text-align: center;
+  /* 수평 조정 */
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+  /* height: 80px; */
+  /* 버튼에서 height를 넣는 경우 상하 align은 어떻게 하나  */
+  background-color: blue;
+  padding: 10px 0px;
+}
