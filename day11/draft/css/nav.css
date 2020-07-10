@@ -1,0 +1,29 @@
+.nav {
+  position: fixed;
+  width: 380px;
+
+  bottom: 0px;
+  padding: 30px 5px;
+  /* margin: 15px 0px; */
+  border-top: 1px rgba(0, 0, 0, 0.1) solid;
+  /* background-color: white; */
+}
+
+.nav .nav__item i {
+  font-size: 20px;
+  opacity: 0.4;
+}
+
+.nav .nav__list {
+  position: relative;
+}
+.nav .nav__circle {
+  background-color: #5679fe;
+  position: absolute;
+  top: -19px;
+  right: 180px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* margin: 10px; */
+}

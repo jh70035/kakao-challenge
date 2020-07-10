@@ -1,0 +1,132 @@
+.city-recomended {
+  margin-top: 50%;
+  margin-left: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 100px;
+}
+.city-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.city-item img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.city-menus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 60%;
+  margin-top: 20px;
+  margin-right: 30%;
+}
+.city-menu {
+  padding: 10px;
+  background-color: #dce2f8;
+  border-radius: 25% 25% 25% 0%;
+  font-size: 14px;
+  font-weight: 600;
+  color: #5679fe;
+}
+
+.city-etc {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: teal;
+  color: white;
+  /* text-align: center; */
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city .city__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.city .city__heart-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.city .city__heart-icon i {
+  font-size: 20px;
+  color: red;
+}
+
+.city .city__location-icon i {
+  font-size: 12px;
+  color: #3f67ff;
+}
+.city .city__rate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.city .rate__column:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city .star {
+  color: #ff9500;
+}
+
+.city .score {
+  margin-left: 10px;
+}
+
+.city .city__overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* padding: 0px 10px; */
+}
+
+.city .city__overview P:nth-child(1) {
+  margin-top: 8px;
+  font-size: 20px;
+  color: #5679fe;
+}
+
+.city .city__overview P:nth-child(2) {
+  margin-top: 10px;
+  font-size: 25px;
+  color: #5679fe;
+}
+
+.city .city__overview P:nth-child(3) {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #5679fe;
+}

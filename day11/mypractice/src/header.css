@@ -1,0 +1,11 @@
+.header {
+  padding-top: 60px;
+  background: linear-gradient(rgba(241, 242, 246, 0.2), rgb(241, 242, 246) 75%),
+    url("bg.jpg");
+  background-size: cover;
+}
+.header .header__top {
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+}
