@@ -1,0 +1,127 @@
+body {
+  font-family: sans-serif;
+}
+
+body {
+  position: relative;
+}
+.camera {
+  top: 0px;
+  width: 450px;
+  height: 350px;
+  background-color: #09857d;
+  margin: 30px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 1; */
+}
+
+.takeALook {
+  top: 0px;
+  width: 450px;
+  height: 350px;
+  margin: 30px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* z-index: 2; */
+  /* display: inline-block; */
+  opacity: 0;
+  /* display: none; */
+  transition: opacity 1s, transform 1s, background-color 1s;
+  /* transition: background-image 1s; */
+
+  /* transition: opacity 2s ease-in-out; */
+
+  /* transition: opacity 0.5s ease-in-out; */
+  /* animation: mov 0.5s  ease-in-out forwards; */
+}
+
+.takeALook .takeALook__author {
+  color: tomato;
+}
+.takeALook .takeALook__camera {
+  color: white;
+}
+.takeALook .takeALook__btn {
+  color: white;
+  background-color: tomato;
+  border: none;
+}
+
+.down-box .down-box__author {
+  color: tomato;
+}
+.down-box .down-box__camera {
+  color: white;
+}
+.down-box .down-box__btn {
+  color: white;
+  background-color: tomato;
+  border: none;
+}
+
+.takeALook:hover {
+  /* display: inline-block; */
+  opacity: 1;
+  transform: translate(10px, 10px);
+  /* background-image: image("image2.jpg"); */
+  background-color: #273949;
+
+  /* transform: translate(10px, 10px); */
+  /* animation: mov 1s ease-in-out forwards; */
+}
+
+.test-box {
+  top: 400px;
+  margin-left: 30px;
+  width: 450px;
+  height: 350px;
+  /* background-color: tomato; */
+  position: relative;
+}
+
+.up-box {
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+  transition: height 1s;
+  /* transition: background-color 1s; */
+  position: absolute;
+}
+.up-box:hover {
+  height: 80%;
+  /* background-color: blue; */
+}
+
+.down-box {
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  background-color: black;
+  opacity: 0;
+  /* transition: height 1s; */
+  transition: opacity 1s linear;
+  /* transition: background-color 1s; */
+  position: absolute;
+}
+
+.up-box:hover ~ .down-box {
+  opacity: 1;
+  /* height: 20%; */
+  /* background-color: black; */
+  /* background-color: yellow; */
+}
